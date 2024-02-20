@@ -1,17 +1,18 @@
 @import "./varaibles.scss";
 
 input[type="text"] {
+  background-color: rgb(230, 230, 230);
   margin-top: 5px;
   margin-bottom: 10px;
-  border: 2px solid rgba(26, 89, 135, 0.69);
-  border-radius: 1rem;
+  border: 2px solid rgba(26, 89, 135, 0.5);
+  border-radius: 0.75rem;
   padding: 5px 10px;
   font-family: "Alegreya";
 
-  &:hover {
-    transform: translateY(-2px) scale(1.02);
-    transition: 200ms ease-in-out;
-  }
+  //   &:hover {
+  //     transform: translateY(-2px) scale(1.02);
+  //     transition: 200ms ease-in-out;
+  //   }
 }
 
 input[type="text"]:focus {

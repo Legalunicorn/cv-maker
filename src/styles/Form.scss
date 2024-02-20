@@ -10,8 +10,9 @@ button {
   margin-bottom: 8px;
 
   &:hover {
-    background-color: $white;
-    color: $blue2;
+    background-color: $blue1;
+    color: $white;
+    transform: scale(1.02);
     transition: 250ms ease-in-out;
   }
 }
@@ -37,6 +38,7 @@ button {
 
 .field-group {
   background-color: white;
+  color: $blue1;
   // background-color: red;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -46,6 +48,7 @@ button {
 }
 
 .form-header {
+  text-align: center;
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
@@ -58,4 +61,9 @@ button {
   padding: 1rem;
   border-radius: 1.5rem;
   border: 2px dashed $blue2;
+}
+
+.button-add {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
 }

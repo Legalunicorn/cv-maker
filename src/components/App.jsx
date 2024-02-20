@@ -89,13 +89,17 @@ function App() {
                   eduForm={educationForm}
                   setEduForm={setEducationForm}
                 />
-                <button onClick={handleAddEducation}>Add Education</button>
+                <button className="button-add" onClick={handleAddEducation}>
+                  Add Education
+                </button>
               </div>
 
               <div className="field-group">
                 <p className="form-header">Work Experiences</p>
                 <Work workForm={workForm} setWorkForm={setWorkForm} />
-                <button onClick={handleAddWork}>Add Work</button>
+                <button className="button-add" onClick={handleAddWork}>
+                  Add Work
+                </button>
               </div>
             </>
           ) : (
@@ -112,6 +116,7 @@ function App() {
                 {personalDetailsForm.address}
               </div>
               <div className="d-contact light">
+                {/* <MaterialIcon icon="call"/> */}
                 {personalDetailsForm.contact}
               </div>
               <div className="d-email light">{personalDetailsForm.email}</div>
@@ -119,11 +124,16 @@ function App() {
 
             <div className="resume-body">
               <div className="resume-section">
-                <p className="header">Professional Summary</p>
+                {personalDetailsForm.summary && (
+                  <p className="header">Professional Summary</p>
+                )}
                 <div id="summary-content">{personalDetailsForm.summary}</div>
               </div>
               <div className="resume-section">
-                <p className="header">Education</p>
+                {(educationForm[0].school ||
+                  educationForm[0].specialization) && (
+                  <p className="header">Education</p>
+                )}
                 <div>
                   {educationForm.map((education) => {
                     return (
@@ -135,8 +145,10 @@ function App() {
                   })}
                 </div>
               </div>
-
-              <p className="header">Work Experiences</p>
+              {(workForm[0].title ||
+                workForm[0].period ||
+                workForm[0].position ||
+                workForm[0].desc) && <p className="header">Work Experiences</p>}
               <div className="resume-section">
                 <div>
                   {workForm.map((work) => {
