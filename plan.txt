@@ -1,0 +1,19 @@
+details (div or component idk)
+
+
+<FormField/> (Title,addGroup(type: School,Work),addField,)
+ - personal (useState) - {{name:,address:,hp:,email:,}}
+
+ - schools (useState) - array, with id
+ - schoolID
+
+
+ - work (useState)
+ - workID 
+
+
+<personal> ()
+
+<SchoolList> ()
+
+<WorkList> ()
