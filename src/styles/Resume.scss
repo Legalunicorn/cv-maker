@@ -1,116 +1,112 @@
 @import "./varaibles.scss";
 
+.resume {
+  padding-top: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f4ec;
+  min-width: 300px;
 
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+}
 
-.resume{
-    padding-top:2rem;
-    flex:1;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F8F4EC;
-    min-width: 300px;
-    // min-height: 800px;
+.resume-contents {
+  background-color: white;
+  overflow: auto;
+  width: 80%;
+  max-width: 465px;
+  aspect-ratio: 1/1.414;
+  // height: fit-content;
+  filter: drop-shadow(0 0 1.5rem grey);
+  margin-bottom: 2rem;
+}
 
-    overflow-wrap: break-word;
+.resume-header {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: $blue1;
+  color: #f5f0e9;
+}
+
+.resume-header div:not(:first-child) {
+  color: #e5e1da;
+}
+
+.d-name {
+  flex: 0 0 100%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.d-address {
+  flex: 0 0 100%;
+  margin-bottom: 1rem;
+}
+
+.resume-body {
+  padding: 1.8rem;
+  text-align: start;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+.header {
+  font-family: "Alegreya", sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: start;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid $blue2;
+}
+
+.school {
+  margin-top: 10px;
+  // border-left: 3px solid $blue2;;
+  padding-left: 5px;
+}
+
+.school-name {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.work {
+  display: flex;
+  // flex-direction:column;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+
+  & p:nth-child(1) {
+    flex: 0 0 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 5px;
   }
 
-.resume-contents{
-    background-color: white;
-    width: 80%;
-    max-width: 465px;
-    aspect-ratio: 1/1.414;
-    filter: drop-shadow(0 0 1.5rem grey);
-    margin-bottom: 2rem;
-}
-
-.resume-header{
-    padding:1.5rem;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: $blue1;
-    color:#f5f0e9;
-
-}
-
-.resume-header div:not(:first-child){
-    color:#E5E1DA;
-}
-
-.d-name{
-    flex:0 0 100%;
-    font-size: 2rem;
-    font-weight: bolder;
-    // font-family: "yellowtail",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-.d-address{
-    flex:0 0 100%;
-    margin-bottom: 1rem;
-}
-
-
-.resume-body{
-    padding:1.8rem;
-    text-align: start;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-.resume-section{
-    margin-bottom:1.5rem;
-}
-.header{
-    font-family: 'Alegreya',sans-serif;
+  & p:nth-child(2) {
+    margin-right: auto;
     font-style: italic;
-    font-size: 1.1rem;
-    text-align: start;
-    padding-bottom: 3px;
-    margin-bottom:10px;
-    font-weight:bold;
-    border-bottom: 1px solid $blue2;
-}
+    padding-bottom: 8px;
+  }
 
-.school{
-    margin-top:10px;
-    // border-left: 3px solid $blue2;;
+  & p:nth-child(4) {
+    flex: 0 0 100%;
+  }
+
+  & p:not(:nth-child(1)) {
     padding-left: 5px;
+  }
 }
 
-.school-name{
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight:bold
-}
-
-.work{
-    display:flex;
-    // flex-direction:column;
-    padding-bottom: 1rem;
-    flex-wrap: wrap;
-
-    & p:nth-child(1){
-        flex: 0 0 100%;
-        font-weight: bold;
-        text-decoration: underline;
-        padding-left: 5px;
-    }
-
-    & p:nth-child(2){
-        margin-right:auto;
-        font-style: italic;
-        padding-bottom:8px;
-    }
-
-    & p:nth-child(4){
-        flex: 0 0 100%;
-    }
-
-    & p:not(:nth-child(1)){
-        padding-left:5px;
-    }
-}
-
-#summary-content{
-    line-height: 1.1;
-    padding-left: 5px;
+#summary-content {
+  line-height: 1.1;
+  padding-left: 5px;
 }

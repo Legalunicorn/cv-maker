@@ -1,24 +1,20 @@
 @import "./varaibles.scss";
 
-
 #root {
   text-align: center;
-  display:flex;
+  display: flex;
   justify-content: center;
   // height:2000px;
   // font-size: 13px;
   background-color: $blue1;
+  min-height: 100dvh;
 }
 
-.contents{
-  display:flex;
+.contents {
+  display: flex;
   width: 100%;
   max-width: 1000px;
 }
-
-
-
-
 
 /*
 .logo {
