@@ -17,7 +17,7 @@ function App(){
 
   const [educationID,setEducationID] = useState(1)
   const [educationForm,setEducationForm] = useState([
-    {id:0,school:'somefk sch',specialization:'hello'}
+    {id:0,school:'',specialization:''}
   ])
   function handleAddEducation(){
     setEducationID(educationID+1)

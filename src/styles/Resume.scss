@@ -101,6 +101,10 @@
         padding-bottom:8px;
     }
 
+    & p:nth-child(4){
+        flex: 0 0 100%;
+    }
+
     & p:not(:nth-child(1)){
         padding-left:5px;
     }
